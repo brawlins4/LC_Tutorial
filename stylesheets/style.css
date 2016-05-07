@@ -1,0 +1,88 @@
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('font/fontawesome-webfont.eot');
+  src: url('font/fontawesome-webfont.eot?#iefix') format('eot'), 
+  	   url('font/fontawesome-webfont.woff') format('woff'), 
+  	   url('font/fontawesome-webfont.ttf') format('truetype'), 
+  	   url('font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background-color: #333;
+}
+
+#sortable{
+	width: 1200px;
+	margin: 80px auto;
+    clear: both;
+}
+
+.ui-sortable {
+	margin: 100px auto;
+	-webkit-box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .1);
+    box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .1);
+    padding: 0; 
+    list-style-type: none; 
+}
+
+.ui-sortable li.ui-state-default {
+	display: block;
+	margin: 20px;
+	float: left;
+	width: 100px;
+	height: 200px;
+	line-height: 48px;
+	font-size: 1.4em; 
+	color: black;
+	padding: 30px;
+	text-indent: 15px;
+    border-width: 1em;
+    border-style:  double;
+    font-size: 1.1em;
+    background-color: #F57921;
+	cursor: pointer;
+}
+
+.ui-sortable li.ui-state-default:hover{
+    background-color: #F95121;
+}   
+.button5 {
+    background-color: #F57921;
+    color: white;
+    border:double black;
+	padding: 5px;
+    margin: 0 auto;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+.allbuttons{
+    padding-left: 1100px;
+    clear:both;
+    margin-bottom: 80px;
+}
+.clear {
+    clear:both;
+}
+
+#formRequest{
+    color: white;
+    margin: 200px;
+    font-size: 1.4em;
+}
+.input{
+    margin: 10px;
+    border: .5em;
+    border-style: double;
+  
+}
+#confirmation{
+    margin: 260px;
+    margin-left: 400px;
+    color: white;
+}
