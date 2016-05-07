@@ -38,8 +38,6 @@ function Sprint(list)
             alert("The Books are sorted!!");
             numpage=numpage+1;
             window.location.href ="index"+numpage+".html";
-            
-            alert(numpage);
         }
  
     }
