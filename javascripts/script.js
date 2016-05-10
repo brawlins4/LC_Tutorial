@@ -57,7 +57,7 @@ function postContactToGoogle()
     var lastname=$('#lastname').val();
 
     $.ajax({
-        url:"https://docs.google.com/forms/d/1419NCBpsn3xTM840qWbZ_fcBWpg6rOfdgMU8jIVJGM4/formResponse",data:{"entry_1111613135":firstname,"entry_1415123890":lastname},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+        url:"https://docs.google.com/forms/d/1TF_19_P1cDp_-UYWEbXUyzUhFo-qhfR09NU-_appnvY/formResponse",data:{"entry_142575148":firstname,"entry_entry_450922818":lastname},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
     });
 }
 
