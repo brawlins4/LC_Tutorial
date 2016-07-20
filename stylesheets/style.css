@@ -11,79 +11,196 @@
 }
 
 body {
-	background-color: #333;
+	background-image: url('https://s3.amazonaws.com/libapps/accounts/4983/images/extra_clean_paper.png');
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: scroll;
 }
-
-#sortable{
+.row {
+    margin-left: 0px;
+    margin-right: auto;
+}
+#logoHeader {
+    padding: 33px 0px 0px 0px;
+    min-height: 120px;
+}
+#oneSearch {
+    padding-top: 40px;
+    min-height: 120px;
+}
+#LRCheader {
+    background-color: #f47920;
+    width: 100%;
+    background-size: cover;
+    min-height: 120px;
+    margin: 0px;
+}
+img.logo {
+    padding-left: 10px;
+    width: 95%;
+    max-width: 400px;
+}
+.navbar-lrc {
+    background-color: #1a1a1a;
+    border-top: 1px solid #fff;
+    font-weight: bold;
+	color: #fff;
+}
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.navbar-lrc .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+}
+.navbar-lrc .navbar-nav > li > a:hover {
+    background-color: #f47920;
+}
+.btn-hours {
+    border: none;
+    background-color: #1a1a1a;
+    padding-top: 0px;
+}
+.lrcHours {
+    color: #fff;
+    margin-top: 5px;
+}
+.hours-library {
+    color: #f47920;
+}
+table td[class*=col-loc] {
+    display: none;
+}
+.hours-col-time, .weekHours {
+    font-weight: bold;
+    font-size: 12px;
+}
+#lrc_background {
+    background: url('https://s3.amazonaws.com/libapps/customers/1597/images/books.png') no-repeat center top;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.content-container {
+	background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+	
+}
+.directions {
+	font-weight: bold;
+	font-size: 18px;
+}
+/*#sortable{
 	width: 1200px;
 	margin: 80px auto;
     clear: both;
-}
+}*/
 
 .ui-sortable {
-	margin: 100px auto;
+	/*margin: 100px auto;
 	-webkit-box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .1);
     box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .1);
-    padding: 0; 
+    padding: 0; */
     list-style-type: none; 
 }
-
+.heading {
+	font-weight: bold;
+    color: #f47920;
+    text-shadow: 1px 1px #b3b3b3;
+}
+h4 {
+	font-weight: bold;
+}
 .ui-sortable li.ui-state-default {
 	display: block;
 	margin: 20px;
 	float: left;
-	width: 100px;
-	height: 200px;
-	line-height: 48px;
+	width: 125px;
+	height: 275px;
+	/*line-height: 48px;*/
 	font-size: 1.4em; 
 	color: black;
 	padding: 30px;
-	text-indent: 15px;
-    border-width: 1em;
-    border-style:  double;
+	border: 2px solid black;
     font-size: 1.1em;
-    background-color: #F57921;
+    /*background-color: #F57921;*/
+	border-radius: 10px;
 	cursor: pointer;
 }
 
 
-.ui-sortable li.ui-state-default:hover{
-    background-color: #F95121;
-}   
-.button5 {
-    background-color: #F57921;
-    color: white;
-    border:double black;
+/*.ui-sortable li.ui-state-default:hover{
+	opacity: 0.4;
+} */
+.ui-state-highlight {
+	margin: 20px; 
+	height: 275px;  
+	float: left;
+	border: 3px solid #f7d308;
+	border-radius: 10px;
+	background: #fcefa1;
+	color: #363636;
+}
+.callNumber {
+	background: #fff;
 	padding: 5px;
-    margin: 0 auto;
+	width: 60px;
+	margin-top: 110px;
+	border-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #1a1a1a;
+} 
+.colorOne {	background-color: #FF4830;}
+.colorTwo {background-color: #2AB7CA;}
+.colorThree {background-color: #FED766;}
+.colorFour {background-color: #D2C2F9;}
+.colorFive {background-color: #D3EFBD;}
+
+.shelf {
+	border-bottom: 30px solid #bf8040;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+	top: -40px;
+	z-index: -10;
+}
+/*Example adding pseudo element to give shelf depth*/
+.shelf:after {
+	content: '';
+	background: url(http://dev.ameijer.nl/shelf/img/bg-shelf.png) top left repeat-x;
+	height: 20px;
+	width: calc(100% + 40px); /*IE9+*/
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0 -20px;
 }
 
-.button5:hover {
-    background-color: #555555;
-    color: white;
+footer {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 35px 25px;
+    border-top: 1px solid #fff;
 }
-.allbuttons{
-    padding-left: 1100px;
-    clear:both;
-    margin-bottom: 80px;
+.LRCfooter {
+    padding-bottom: 25px;
 }
-.clear {
-    clear:both;
+footer .panel-title {
+    margin-bottom: 8px;
 }
-
-#formRequest{
-    color: white;
-    margin: 200px;
-    font-size: 1.4em;
+.socialIcons {
+    padding-right: 7px;
 }
-.input{
-    margin: 10px;
-    border: .5em;
-    border-style: double;
-  
-}
-#confirmation{
-    margin: 260px;
-    margin-left: 400px;
-    color: white;
+.GClogo {
+    max-width: 275px;
 }
