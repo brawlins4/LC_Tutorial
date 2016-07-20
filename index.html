@@ -1,0 +1,172 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+    <script>
+        var numpage = 0;
+    </script>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LC Call Number Tutorial: Level 1</title>
+    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="javascripts/script.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+	<script src="dist/sweetalert.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+	
+</head>
+
+<body>
+<div class="row homepage"><div id="LRCheader">
+	<div class="container">
+		<div class="row">
+			<div id="logoHeader" class="col-md-8">
+				<div>
+					<img class="logo" src="https://s3.amazonaws.com/libapps/accounts/4983/images/banner.png">
+				</div>
+			</div>
+			<div id="oneSearch" class="col-md-4">
+				<form class="form-inline text-right-left" action="http://georgetowncollege.on.worldcat.org/search" method="get" target="_blank">
+					<div class="form-group">
+						<input name="spellcheck" value="true" type="hidden">
+						<input name="SID" value="LibGuidesV2" type="hidden">
+						<div class="input-group">
+							<input size="40" type="text" alt="OneSearch box" id="search-text" name="queryString" placeholder="Search for books, articles, ebooks, &amp; more!" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-success" type="submit"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-lrc">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed btn-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-menu-hamburger"></span> Menu
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://libguides.georgetowncollege.edu/LRC">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://libguides.georgetowncollege.edu/LRC/resources">Resources</a></li>
+        <li><a href="http://libguides.georgetowncollege.edu/LRC/serv">Services</a></li>
+        <li><a href="http://libguides.georgetowncollege.edu/LRC/info">Information</a></li>
+        <li><a href="http://libguides.georgetowncollege.edu/LRC/archives">Archives &amp; Special Collections</a></li>
+        <li><a href="http://libguides.georgetowncollege.edu/LRC/aboutus">About</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!--<a class="btn btn-success askUs" href="#" role="button"></a>-->
+<a class="btn btn-hours" href="http://libguides.georgetowncollege.edu/LRC/information/hours" role="button"><div class="lrcHours">Today's Hours:</div> <div id="api_hours_today_iid204_lid0"><table class="hours-today"><tbody><tr class="hours-alt hours-today-row hours-library loc1713"><td class="hours-col-loc">LRC</td><td class="hours-col-time"><span class="s-lc-time">8am – 5pm</span></td></tr></tbody></table></div><script src="https://api3.libcal.com/api_hours_today.php?iid=204&amp;lid=0&amp;format=js&amp;context=object"></script></a>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav></div>
+<div id="lrc_background"></div>
+
+<!------------------------------------------------------Begin Content------------------------->
+    <div class = "container content-container" >
+	<div align="center">
+	<h3 class="heading">Library of Congress Classification Tutorial</h3>
+	<h4>Introduction to Call Numbers</h4>
+	</div>
+	<hr>
+	<!--<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<div align="center" class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XHdQHVXcjXk" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<p align="center">*Video by Northeastern Illinois University</p>
+		</div>
+		<div class="col-md-3"></div>
+	</div>-->
+	<h4>Understanding Library of Congress Call Numbers</h4>
+	<p>A majority of books that you will come across in the LRC will be organized according to <a href="http://www.loc.gov/catdir/cpso/lcco/" target="_blank">Library of Congress Classification System</a>.   Each book in the LRC will have a call number. Call number labels are located on the lower part of the spine of the book. Some materials will have additional markings as part of the call number to denote their location.  For example, reference materials will have REF above the call number label.</p>
+
+	<p>Think of the call number as the book's address on the shelf. The first line in a Library of Congress call number classifies the item by its subject according to the LC Classification System. The entire call number should be noted in order to locate the item.</p>
+	
+	<ul>
+	<li>LC call numbers are first arranged alphabetically, according to the letter or letters at the beginning of the call number, which correspond to the subject matter of the item.<br> 
+<em>Example: Call numbers beginning with D are followed by DA, DB, DC, etc.</em></li><br>
+	<li>Within the alphabetical section, books are arranged by the number(s) that follow. Notice that these numbers are regarded as whole numbers. For instance, DS 1200 comes after DS 345. <br.
+<em>Example: BA 56 before BA 234 before BA 234.57 before BA 234.8</em></li><br>
+	<li>The next lines are alphabetic, then numeric as a decimal. The numerical part of this section is a decimal number, not a whole number. Use alphabetical order first, then the decimal extension to put the call numbers in correct sequence. (B3113 would come before B4, because 0.3113 is smaller than 0.4.)<br>
+<em>Example: HV 1431 .B7 before HV 1431 .B83 before HV 1431 .F25 before HV 1431 .F7</em></li><br>
+	<li>Editions are often arranged by date or by the date and letters. <br>
+<em>Example: PS 3525 .I52 1971 before PS 3525 .I52 1973 before PS 3525 .I52 1973a</em></li>
+	</ul>
+	
+	<div align="center">
+		<img src="images/callNumbers.jpg" alt="Call Numbers Images" class="img-thumbnail">
+	</div>
+	<hr>
+	
+	<h4>Library of Congress Classification System</h4>
+	<p>"The Library of Congress Classification (LCC) is a classification system that was first developed in the late nineteenth and early twentieth centuries to organize and arrange the book collections of the Library of Congress. Over the course of the twentieth century, the system was adopted for use by other libraries as well, especially large academic libraries in the United States. It is currently one of the most widely used library classification systems in the world...The system divides all knowledge into <a href="https://www.loc.gov/catdir/cpso/lcco/" target="_blank">twenty-one basic classes</a>, each identified by a single letter of the alphabet. Most of these alphabetical classes are further divided into more specific subclasses, identified by two-letter, or occasionally three-letter, combinations. For example, class N, Art, has subclasses NA, Architecture; NB, Sculpture, ND, Painting; as well as several other subclasses. Each subclass includes a loosely hierarchical arrangement of the topics pertinent to the subclass, going from the general to the more specific. Individual topics are often broken down by specific places, time periods, or bibliographic forms (such as periodicals, biographies, etc.). Each topic (often referred to as a caption) is assigned a single number or a span of numbers. Whole numbers used in LCC may range from one to four digits in length, and may be further extended by the use of decimal numbers. Some subtopics appear in alphabetical, rather than hierarchical, lists and are represented by decimal numbers that combine a letter of the alphabet with a numeral , e.g. .B72 or .K535. Relationships among topics in LCC are shown not by the numbers that are assigned to them, but by indenting subtopics under the larger topics that they are a part of, much like an outline. In this respect, it is different from more strictly hierarchical classification systems, such as the Dewey Decimal Classification, where hierarchical relationships among topics are shown by numbers that can be continuously subdivided." --<a href="https://www.loc.gov/catdir/cpso/lcc.html" target="_blank">Library of Congress</a></p>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8"><img src="images/LoC.png" alt="Library of Congress Classification Image" class="img-thumbnail"></div>
+		<div class="col-md-2"></div>
+	</div>
+	<hr>
+	
+	<h4>Let's Test Your Knowledge</h4>
+	<p>Now that you have an understanding of how books in the LRC are organized it's time to test your knowledge.  The following tutorial consists of three levels.  You will be required to put all of the books in order before proceeding to the next level.  This training is required for all LSAs.  At the end you will need to enter your name so that we know you completed the tutorial. Good Luck!</p>
+	<p align="center"><a href="level.html" class="btn btn-primary btn-lg" role="button">Proceed to Tutorial</a></p>
+	<p>*This tutorial was developed in collaboration with Georgetown College students Sabera Daqiq and Wence Peraza as part of a class project for CSC 450.</p>
+    </div>
+<!------------------------------------------------End Content---------------------------------->
+    
+<footer>
+<div class="container">
+	<div class="row">
+    	<div class="col-md-4 LRCfooter">
+        	<h3 class="panel-title">Ensor LRC</h3>
+            400 East College Street<br>
+            Georgetown College<br>
+            Georgetown, KY 40324
+        </div>
+        <div class="col-md-4 LRCfooter">
+             <h3 class="panel-title footerPanel">Social Media</h3>
+            <a href="https://www.facebook.com/EnsorLRC/" target="_blank"><img class="socialIcons" src="https://s3.amazonaws.com/libapps/customers/1597/images/facebook.png"></a>
+            <a href="https://twitter.com/EnsorLRC" target="_blank"><img class="socialIcons" src="https://s3.amazonaws.com/libapps/customers/1597/images/twitter.png"></a> 
+            <a href="https://www.instagram.com/EnsorLRC/" target="_blank"><img class="socialIcons" src="https://s3.amazonaws.com/libapps/customers/1597/images/instagram.png"></a> 
+           <a href="https://www.youtube.com/channel/UClH1JjnL9y023Emm-NS4XGA" target="_blank"><img class="socialIcons" src="https://s3.amazonaws.com/libapps/customers/1597/images/youtube.png"></a> 
+        </div>
+        <!--<div class="col-md-3 LRCfooter">
+        	<h3 class="panel-title">GC Quick Links</h3>
+            Portal<br>
+            Moodle<br>
+            GConnect
+        </div>-->
+        <div class="col-md-4">
+        	<a href="hhtp://www.georgetowncollege.edu" target="_blank"><img class="GClogo" src="https://s3.amazonaws.com/libapps/customers/1597/images/Black-line-logo.png"></a>
+        </div>
+    </div>  
+</div>
+</footer>
+
+</body>
+
+</html> 
