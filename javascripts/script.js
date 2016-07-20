@@ -1,5 +1,3 @@
-
-
 function check_sort() 
 {
 		var list=[];
@@ -15,14 +13,22 @@ function check_sort()
        
 }
 
-$(function() 
-  {
-        $( "#sortable" ).sortable(
-        { 
-            placeholder: "ui-sortable-placeholder" 
-        });
-}); 
+//$(function() 
+  //{
+    //    $( "#sortable" ).sortable(
+      //  { 
+		//	containment: 'parent',
+			//tolerance: 'sortable',
+			//axis: 'x'
+        //});
+//}); 
 
+$(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
 		
 function numOrdA(a, b)
 { 
@@ -35,30 +41,21 @@ function Sprint(list)
     {  
         if(numpage>=0 && numpage <4)
         {
-            alert("The Books are sorted!!");
-            numpage=numpage+1;
-            window.location.href ="index"+numpage+".html";
+			swal({
+					title: "Great Job!", 
+					text: "All the books are in the correct order.", 
+					type: "success",
+					showCancelButton: false
+				}, function() {
+					numpage=numpage+1;
+					window.location.href = "level"+numpage+".html";
+				});
         }
  
     }
     else
     {
 		list.sort(numOrdA);
-		document.getElementById("demo").innerHTML ="list of books misplaced:"+list.toString();
+		swal("Try Again", "The books are not in the correct order.", "error");
     }
 }
-	
-
-
-
-function postContactToGoogle() 
-{
-    var firstname=$('#firstname').val();
-    var lastname=$('#lastname').val();
-
-    $.ajax({
-        url:"https://docs.google.com/forms/d/1TF_19_P1cDp_-UYWEbXUyzUhFo-qhfR09NU-_appnvY/formResponse",data:{"entry_142575148":firstname,"entry_entry_450922818":lastname},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
-    });
-}
-
-    
